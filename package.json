@@ -1,0 +1,36 @@
+{
+  "name": "@ickb/v1-meta",
+  "version": "1.4.0",
+  "description": "An utility for adding on-chain metadata for iCKB xUDT",
+  "scripts": {
+    "build": "tsc",
+    "start": "node --env-file=../env/${CHAIN}/.env dist/index.js"
+  },
+  "files": [
+    "/dist",
+    "/src"
+  ],
+  "keywords": [],
+  "author": "phroi",
+  "license": "MIT",
+  "dependencies": {
+    "@ckb-lumos/base": "^0.23.0",
+    "@ckb-lumos/ckb-indexer": "^0.23.0",
+    "@ckb-lumos/codec": "^0.23.0",
+    "@ckb-lumos/common-scripts": "^0.23.0",
+    "@ckb-lumos/config-manager": "^0.23.0",
+    "@ckb-lumos/hd": "^0.23.0",
+    "@ckb-lumos/helpers": "^0.23.0",
+    "@ickb/lumos-utils": "1.4.1",
+    "@ickb/v1-core": "1.4.1"
+  },
+  "devDependencies": {
+    "@types/node": "^22.5.5",
+    "typescript": "next",
+    "eslint": "^9.10.0",
+    "@typescript-eslint/eslint-plugin": "canary",
+    "@typescript-eslint/parser": "canary",
+    "prettier": "^3.3.3"
+  },
+  "packageManager": "pnpm@9.12.1+sha256.91452fdfa46234ae447d46d5c4fc4e7e0a7058f90495c4b6f77f8beebbb154e3"
+}
